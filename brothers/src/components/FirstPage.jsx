@@ -1,11 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../images/1.svg'
 import { Link, useNavigate } from 'react-router-dom'
-import brothers from '../images/Brothers.png'
-import BlackMenu from '../images/MINI-U.svg'
-import signin from '../images/2.svg'
-import signup from '../images/3.svg'
-import guest from '../images/4.svg'
 import Header from './Header'
 import MENUS from '../images/menushow.png'
 import LANDINGPAGES from '../images/landingPage.png'
@@ -19,22 +13,12 @@ import button2 from '../images/button2.svg'
 import Footer from './Footer'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default function FirstPage() {
   const[phoneNumber,setPhoneNumber] = useState('')
+  const[phoneNumber2,setPhoneNumber2] = useState('')
   const[Name,setName] = useState('')
+  const[Name2,setName2] = useState('')
+
 
   const nav = useNavigate()
   return (
@@ -101,12 +85,12 @@ export default function FirstPage() {
         <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2>
         <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>
         <img width={'30%'}  src={mousedown} alt="" />
-        <input onChange={(e)=>{setName(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
-        <input onChange={(e)=>{setPhoneNumber(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
+        <input onChange={(e)=>{setName2(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
+        <input onChange={(e)=>{setPhoneNumber2(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
         <img width={'80%'} src={button2} alt="" />
 
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

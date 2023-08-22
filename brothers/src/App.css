@@ -354,8 +354,34 @@ html
   width: 100%;
   bottom: 0px;
   left: 0px;
-  /* border-top: black solid 5px; */
-  /* background-color: black; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-top: black solid 5px;
+  background-color: black;
 }
+.footerFont
+{
+  text-decoration: none;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  margin-top: 5%;
+}
+#socialMediaDiv
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+#footerNav
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
 
+}
 

@@ -1,6 +1,4 @@
 import React, { useContext, useState } from 'react'
-import brothers from '../images/Brothers.png'
-import menu from '../images/menus.png'
 import close from '../images/X.svg'
 import MENU from '../images/MENU.svg'
 import WhiteMenu from '../images/MINI-U-White.svg'

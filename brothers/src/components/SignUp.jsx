@@ -1,10 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import brothers from '../images/Brothers.png'
-import Logo from '../images/1.svg'
 import BlackMenu from '../images/MINI-U.svg'
-import signup from '../images/3.svg'
 import mousedown from '../images/mouse-cursor.png'
 import button2 from '../images/button2.svg'
 

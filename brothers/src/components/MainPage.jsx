@@ -1,8 +1,6 @@
 import React, { useContext, useState } from 'react'
-import brothers from '../images/Brothers.png'
 import menuRestaurant from '../images/menurestaurant.jpg'
 import cream from '../images/cream.jpg'
-import { Link } from 'react-router-dom';
 import Header from './Header';
 import userContext from '../userContext';
 
