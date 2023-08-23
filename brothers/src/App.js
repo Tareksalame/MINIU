@@ -7,7 +7,6 @@ import MainPage from './components/MainPage';
 import FirstPage from './components/FirstPage';
 import { UsersProvider } from './userContext';
 function App() {
-  const[user,setUser] = useState({})
 
   return (
     <div className="App">
@@ -15,8 +14,8 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<FirstPage/>}/>
-        {/* <Route path='/signin' element={<SignIn user={user} setUser={setUser}/>}/> */}
-        <Route path='/goAhead' element={<SignUp/>}/>
+        <Route path='/BusinessCard' element={<SignIn/>}/>
+        <Route path='/DigitalMenu' element={<SignUp/>}/>
         <Route path='/OurProducts' element={<MainPage/>}/>
       </Routes>
       </BrowserRouter>

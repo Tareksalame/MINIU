@@ -36,13 +36,14 @@ html
   width: 65%;
   height: 30px;
   margin-bottom: 3%;
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 20px;
   padding: 3%;
-  border: 3px solid black;
+  border: 3px solid rgb(214, 194, 173);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 900;
 }
+
 .signInButton
 {
   width: 55%;
@@ -210,6 +211,8 @@ html
 .mainPageMainDiv
 {
   position: relative;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -19,6 +19,64 @@ export default function FirstPage() {
   const[Name,setName] = useState('')
   const[Name2,setName2] = useState('')
 
+  const menuSign = ()=>
+  {
+    fetch('/menuSign', 
+            {
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                method:'post',
+                body:JSON.stringify({
+                    name:Name,
+                    phoneNumber:phoneNumber,
+                    type:'Menu/Catalog'
+                })
+            }).then((res)=>{return res.json()})
+            .then((data)=>
+            {
+              if(data == 'done')
+              {
+                setName('')
+                setPhoneNumber('')
+                alert('נהדר! ניצור איצכם קשר בהקדם האפשרי')
+              }
+              else
+              {
+                alert('לא נקלט תרענן את הדף ותנסה שוב')
+              }
+            }).catch((err)=>{return err})
+  }
+
+  const cardSign = ()=>
+  {
+    fetch('/cardSign', 
+            {
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                method:'post',
+                body:JSON.stringify({
+                    name:Name2,
+                    phoneNumber:phoneNumber2,
+                    type:'Business/Landing Page'
+                })
+            }).then((res)=>{return res.json()})
+            .then((data)=>
+            {
+              if(data == 'done')
+              {
+                setName2('')
+                setPhoneNumber2('')
+                alert('נהדר! ניצור איתכם קשר בהקדם האפשרי')
+              }
+              else
+              {
+                alert('לא נקלט תרענן את הדף ותנסה שוב')
+              }
+            }).catch((err)=>{return err})
+  }
+
 
   const nav = useNavigate()
   return (
@@ -37,7 +95,7 @@ export default function FirstPage() {
         <h2 className='waisTime'>?אז למה לבזבז את הזמן <br />
         תשדרגו את העסק שלכם עכשיו עם <br /> התפריט הדיגיטלי
         </h2>
-        <img width={'90%'} src={button1} onClick={()=>{nav('/goAhead')}} alt="" />
+        <img width={'90%'} src={button1} onClick={()=>{nav('/DigitalMenu')}} alt="" />
         <img className='menuAndcatalog' width={'80%'} src={menuRestaurant} alt="" />
         <img className='menuAndcatalog' width={'80%'} src={cream} alt="" />
 
@@ -62,19 +120,19 @@ export default function FirstPage() {
         <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2>
         <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>
         <img width={'30%'} src={mousedown} alt="" />
-        <input onChange={(e)=>{setName(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
-        <input onChange={(e)=>{setPhoneNumber(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
-        <img width={'80%'} src={button2} alt="" />
+        <input value={Name} onChange={(e)=>{setName(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
+        <input value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
+        <img width={'80%'} onClick={menuSign} src={button2} alt="" />
 
         {/* <img style={{width:'50%',paddingBottom:'30%'}} className='logo' src={BlackMenu} alt="" /> */}
       </div>
       <div style={{marginTop:'30px'}} id='landingPageDiv'>
-        <h1 style={{fontSize:'20px',backgroundColor:'rgb(214, 194, 173)',padding:'3%'}} className='h1HomeMainTitle'>  דף נחיתה וכרטיס ביקור לעסק שלך עם <br /> ADMIN PANEL <br /> שיעזור לך בניהול הלקוחות</h1>
-        <h2 className='h2HomeMainTitle'>יש לך עסק ? רוצה להקל על עצמך את ניהולו ואת ניהול הלקוחות שלך ? בוא נצור לך דף נחיתה מותאם אישית לפי הבקשות שלך ולפי העיצוב שתרצה</h2>
+        <h1 style={{fontSize:'30px',backgroundColor:'rgb(214, 194, 173)',padding:'3%'}} className='h1HomeMainTitle'>  כרטיס ביקור דיגיטלי מקצועי </h1>
+        <h2 className='h2HomeMainTitle'>יש לך עסק ? רוצה להקל על עצמך ועל הלקוחות שלך ? בוא נצור לך כרטיס ביקור דיגיטלי מותאם אישית לפי הבקשות שלך ולפי העיצוב שתרצה</h2>
         <img src={LANDINGPAGES} width={'95%'} alt="" />
-        <h2 className='h2HomeMainTitle'> תקבל עם דף הנחיתה גם <br /> ADMIN PANEL <br /> כדי שתוכל לנהל את <br /> הנרשמים דרך דף הנחיתה ולהיות עדכני בכל רגע</h2>
+        <h2 style={{marginBottom:'0px'}} className='h2HomeMainTitle'> תקבלו עם דף הנחיתה גם </h2>
+        <h2 style={{marginTop:'0px'}} className='h2HomeMainTitle'> במתנה QR שני סטנדים לסריקת ה </h2>
         <img src={scanme} width={'90%'} alt="" />
-        <h2 className='h2HomeMainTitle'> QR במתנה תקבלו גם 2 סטנדים לסריקת ה </h2>
         <h1 className='h1HomeMainTitle' style={{fontSize:'25px',backgroundColor:'rgb(214, 194, 173)',padding:'3%'}}>יתרונות של כרטיס ביקור דיגיטלי</h1>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>חיוג מהיר לעסק שלך - לחצן חיוג✅</h3>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>WhatsApp שליחת הודעת ✅</h3>
@@ -85,9 +143,9 @@ export default function FirstPage() {
         <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2>
         <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>
         <img width={'30%'}  src={mousedown} alt="" />
-        <input onChange={(e)=>{setName2(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
-        <input onChange={(e)=>{setPhoneNumber2(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
-        <img width={'80%'} src={button2} alt="" />
+        <input value={Name2} onChange={(e)=>{setName2(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
+        <input value={phoneNumber2} onChange={(e)=>{setPhoneNumber2(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
+        <img width={'80%'} onClick={cardSign} src={button2} alt="" />
 
       </div>
       <Footer/>

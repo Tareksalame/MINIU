@@ -6,6 +6,7 @@ const uuid = require('uuid');
 const path = require('path');
 const crypto = require('crypto');
 require('dotenv').config();
+const twilio = require('twilio')
 
 
 const dbURI = process.env.MONGODB_URI;
@@ -15,83 +16,180 @@ app.use(bp.json());
 db.connect(dbURI);
 const nodemailer = require('nodemailer');
 
-const userSchema = db.Schema({
+const userEmailSchema = db.Schema({
     name:String,
-    family:String,
-    userName:String,
-    city:String,
-    makdema:String,
     phoneNumber:Number,
     email:String,
-    password:String,
-    objects:Object
+})
+const userSchema = db.Schema({
+    name:String,
+    phoneNumber:Number,
+    type:String
 })
 
 const userModel = db.model('user',userSchema)
 
+const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'miniuforu@gmail.com',
+      pass: 'ebradgkyfidnmywd',
+    },
+  });
+  
+  
+// פונקציה לשליחת הודעת ברכה
+function sendWelcomeEmail(name,number,type) {
+    const mailOptions = {
+        from: 'miniuforu@gmail.com',
+        to: 'tareq.salame@gmail.com',
+        subject: type,
+        text: '\n : مرحبًا طارق، من فضلك قم بالتواصل مع' + '\n' + name + '\n' + '\n : على رقم الهاتف' + '\n' + number,
+      };
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          console.log('Error sending email:', error);
+        } else {
+          console.log('Email sent:', info.response);
+        }
+      });
+      
+  }
 
-app.post('/check' , async(req,res)=>
+  app.post('/menuSign', async(req,res)=>
 {
     let name = req.body.name;
-    let family = req.body.family;
-    let userName = req.body.userName;
-    let city = req.body.city;
-    let makdema = req.body.makdema
     let phoneNumber = req.body.phoneNumber
-    let email = req.body.email;
-    let password = req.body.password;
-    let temp = await userModel.findOne({
-        userName:userName
+    let type = req.body.type
+    let temp = await userModel.insertMany({
+        name:name,
+        phoneNumber:phoneNumber,
+        type:type
     })
-    let emailTemp = await userModel.findOne({
-        email:email
-    })
-    if(temp == null)
+    if(temp !== null)
     {
-        if(emailTemp == null)
-        {
-            userModel.insertMany({
-            name:name,
-            family:family,
-            userName:userName,
-            city:city,
-            makdema:makdema,
-            phoneNumber:phoneNumber,
-            email:email,
-            password:password,
-            })
-            res.json(temp)
-        }
-        else
-        {
-            res.json('emailTemp')
-        }
+        sendWelcomeEmail(name,phoneNumber,type)
+        res.json('done')
     }
     else
     {
-        res.json('temp')
+        res.json('error')
     }
-
-
 })
 
-app.post('/signIn' , async(req,res)=>
+  function sendDigitalMenu(arr) {
+    const mailOptions = {
+        from: 'miniuforu@gmail.com',
+        to: 'tareq.salame@gmail.com',
+        subject: arr.type,
+        text: '\nمرحبًا طارق قم بالتواصل مع\n' + arr.name + '\nرقم هاتف\n' + arr.phoneNumber + '\nايميل\n' + arr.email + '\nعنوان\n' + arr.address ,
+      };
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          console.log('Error sending email:', error);
+        } else {
+          console.log('Email sent:', info.response);
+        }
+      });
+      
+  }
+
+  const WhatsappNumber = "https://wa.me/972525272910"
+
+  function sendToTheCostumer(arr) {
+    const mailOptions = {
+        from: 'miniuforu@gmail.com',
+        to: arr.email,
+        subject: 'Welcome' + ' ' + arr.name,
+        text:'Thank You For Choosing us,\n we will call you back soon.\nif you have any question\nyou can contact us on Whatsapp \n' +WhatsappNumber ,
+      };
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          console.log('Error sending email:', error);
+        } else {
+          console.log('Email sent:', info.response);
+        }
+      });
+      
+  }
+
+
+
+app.post('/digitalMenu', async(req,res)=>
 {
-    let userName = req.body.userName;
-    let password = req.body.password;
-    let temp = await userModel.findOne({
-        userName:userName,
-        password:password
+    let name = req.body.name;
+    let phoneNumber = req.body.phoneNumber
+    let email = req.body.email
+    let address = req.body.address
+    let type = req.body.type
+    let arr = {name:name,phoneNumber:phoneNumber,email:email,address:address,type:type}
+    let temp = await userModel.insertMany({
+        name:name,
+        phoneNumber:phoneNumber,
+        email:email,
+        address:address,
+        type:type
     })
-    if(temp == null)
+    if(temp !== null)
     {
-        res.json(temp)
+        sendDigitalMenu(arr)
+        sendToTheCostumer(arr)
+        res.json('done')
     }
     else
     {
-        res.json(temp)
+        res.json('error')
     }
 })
+
+app.post('/sendBusinessCard', async(req,res)=>
+{
+    let name = req.body.name;
+    let phoneNumber = req.body.phoneNumber
+    let email = req.body.email
+    let address = req.body.address
+    let type = req.body.type
+    let arr = {name:name,phoneNumber:phoneNumber,email:email,address:address,type:type}
+    let temp = await userModel.insertMany({
+        name:name,
+        phoneNumber:phoneNumber,
+        email:email,
+        address:address,
+        type:type
+    })
+    if(temp !== null)
+    {
+        sendDigitalMenu(arr)
+        sendToTheCostumer(arr)
+        res.json('done')
+    }
+    else
+    {
+        res.json('error')
+    }
+})
+
+app.post('/cardSign', async(req,res)=>
+{
+    let name = req.body.name;
+    let phoneNumber = req.body.phoneNumber
+    let type = req.body.type
+    let temp = await userModel.insertMany({
+        name:name,
+        phoneNumber:phoneNumber,
+        type:type
+    })
+    if(temp !== null)
+    {
+        sendWelcomeEmail(name,phoneNumber,type)
+        res.json('done')
+    }
+    else
+    {
+        res.json('error')
+    }
+})
+
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'brothers/build', 'index.html'));
