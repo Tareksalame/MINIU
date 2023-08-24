@@ -114,14 +114,49 @@ html
 #welcome
 {
   background-color: black;
-  border-bottom: 3px solid black;
+  border: 5px solid black;
   padding-bottom: 10%;
-  padding-top: 5%;
-  margin-top: 16%;
-  width: 100%;
-  border-top: black solid 5px;
+  margin-top: 10%;
+  padding-top: 10%;
+  width: 80%;
+  align-self: center;
   border-bottom-left-radius: 50%  ;
   border-bottom-right-radius: 50% ;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#smallMenu
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+#underHeader
+{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  margin-top: 15%;
+  background-color: rgb(214, 194, 173);
+  width: 100%;
+
+}
+#welcome2
+{
+  background-color: black;
+  border: 8px solid black;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  width: 65%;
+  align-self: flex-end;
+  border-bottom-left-radius: 50%  ;
+  border-bottom-right-radius: 50% ;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #OurProducts
@@ -170,8 +205,8 @@ html
   background-color: transparent;
   color: rgb(214, 194, 173);
   border: none;
-  padding-bottom: 8%;
-  padding-top: 8%;
+  padding-bottom: 5%;
+  padding-top: 5%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 900;
 
@@ -212,7 +247,6 @@ html
 {
   position: relative;
   animation: 1s ease-out 0s 1 slideInFromLeft;
-
   display: flex;
   flex-direction: column;
   justify-content: center;

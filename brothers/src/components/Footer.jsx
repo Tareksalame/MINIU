@@ -21,12 +21,12 @@ export default function Footer() {
           </a>
         </div>
         <div id='footerNav'>
-          <a href='/OurProducts' className='footerFont'>המוצרים שלנו</a>
-          <a href='/OurProducts' className='footerFont'>?מי אנחנו</a>
+          <a href='/' style={{marginTop:'20px'}}  className='footerFont'>דף הבית</a>
+          {/* <a href='/OurProducts' className='footerFont'>?מי אנחנו</a> */}
           <a href='/DigitalMenu' className='footerFont'>הזמנת תפריט דיגיטלי</a>
-          <a href='/BusinessCard' className='footerFont'>הזמנת כרטיס ביקור דיגיטלי</a>
+          <a href='/BusinessCard' style={{marginBottom:'20px'}} className='footerFont'>הזמנת כרטיס ביקור דיגיטלי</a>
           {/* <a href='/OurProducts' className='footerFont'></a> */}
-        <img style={{width:'70%'}} onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
+        <img style={{width:'100%'}}  onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
 
 
 

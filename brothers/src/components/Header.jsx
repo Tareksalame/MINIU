@@ -9,6 +9,7 @@ import userContext from '../userContext'
 
 
 export default function Header() {
+  const[showProductsFlag,setShowProductsFlag] = useState(false)
 
   const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>
@@ -39,6 +40,16 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
       return <img onClick={()=>{setFlag(!flag);setShowMenu('none')}} style={{width:'8%'}} src={close} alt="menu" />
     }
   }
+  const showProducts = ()=>
+  {
+    if(showProductsFlag == true)
+    {
+    return <div id='smallMenu'>
+      <a style={{textDecoration:'none'}} className='menuButtons' href="/OurProductsDigitalMenu">תפריט דיגיטלי</a>
+      <a style={{textDecoration:'none'}} className='menuButtons' href="">כרטיס ביקור</a>
+    </div>
+    }
+  }
   return (
     <div>
         <header className='appBar'>
@@ -47,8 +58,9 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
         </header>
         <div className='hidden' id='menuShow' style={{display:showMenu}}>
           <a style={{textDecoration:'none'}} href='/' className='menuButtons'>דף הבית</a>
-          <a style={{textDecoration:'none'}} href='/OurProducts' className='menuButtons'>המוצרים שלנו</a>
-          <a style={{textDecoration:'none'}} href='#whoWeAre' className='menuButtons'>? מי אנחנו</a>
+          <a style={{textDecoration:'none',paddingBottom:'40px'}} onClick={()=>{setShowProductsFlag(!showProductsFlag)}} className='menuButtons'>המוצרים שלנו</a>
+          {showProducts()}
+          {/* <a style={{textDecoration:'none'}} href='#whoWeAre' className='menuButtons'>? מי אנחנו</a> */}
         </div>
         
     </div>

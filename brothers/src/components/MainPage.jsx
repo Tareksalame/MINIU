@@ -3,20 +3,26 @@ import menuRestaurant from '../images/menurestaurant.jpg'
 import cream from '../images/cream.jpg'
 import Header from './Header';
 import userContext from '../userContext';
+import letsstartButton from '../images/letsstartblack.svg'
+import { useNavigate } from 'react-router-dom';
 
 
 export default function MainPage() {
   const[menu,setMenu] = useState(false)
   const{showMenu,setShowMenu} = useContext(userContext)
+  let nav = useNavigate()
 
   return (
     <div className='mainPageMainDiv'>
         <Header/>
-        
+        <div id='underHeader'>
+          <h1 style={{color:'black'}}>תפריט דיגיטלי מקצועי</h1>
+        </div>
           <div id='welcome'>
-            <h1 style={{color:'white',fontSize:'25px'}}>תפריט דיגיטלי מותאם <br /> אישית למסעדות ועסקים</h1>
-            <button id='letStartButton'>בוא נתחיל </button>
+            <h1  style={{color:'white',fontSize:'19px',marginTop:'15%'}}>תפריט דיגיטלי מותאם <br /> אישית למסעדות ועסקים</h1>
+            <img style={{marginBottom:'5%'}} onClick={()=>{nav('/DigitalMenu')}} src={letsstartButton} alt="" />
           </div>
+
           <div id='OurProducts'>
             <h1>למי מתאים התפריט <br />? הדגיטלי </h1>
             <div className='menuForWho'>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc8579e2.css",
-    "main.js": "/static/js/main.53285a2a.js",
+    "main.css": "/static/css/main.b9bd2831.css",
+    "main.js": "/static/js/main.426aa95b.js",
     "static/js/787.0d79f9c0.chunk.js": "/static/js/787.0d79f9c0.chunk.js",
     "static/media/menushow.png": "/static/media/menushow.77aa5ed9b2a1376dbdce.png",
     "static/media/landingPage.png": "/static/media/landingPage.03397ed84183531271dc.png",
@@ -14,16 +14,17 @@
     "static/media/whatsapp.png": "/static/media/whatsapp.d026940870fb334920b7.png",
     "static/media/button1.svg": "/static/media/button1.b62f11dd21d0e5ad09f67dc99834b901.svg",
     "static/media/instagram.png": "/static/media/instagram.75e0546a6b5abe4c0506.png",
+    "static/media/letsstartblack.svg": "/static/media/letsstartblack.294e8dfe95f7b04b683cc8011f5b73ac.svg",
     "static/media/2.svg": "/static/media/2.540119c9d7ca5accf8b7f17904391f34.svg",
     "static/media/MENU.svg": "/static/media/MENU.1e91ae0949b7e667bffa96eb42f9fb89.svg",
     "static/media/X.svg": "/static/media/X.d711e0f8b66e7902bfa2799d2f631434.svg",
     "index.html": "/index.html",
-    "main.bc8579e2.css.map": "/static/css/main.bc8579e2.css.map",
-    "main.53285a2a.js.map": "/static/js/main.53285a2a.js.map",
+    "main.b9bd2831.css.map": "/static/css/main.b9bd2831.css.map",
+    "main.426aa95b.js.map": "/static/js/main.426aa95b.js.map",
     "787.0d79f9c0.chunk.js.map": "/static/js/787.0d79f9c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc8579e2.css",
-    "static/js/main.53285a2a.js"
+    "static/css/main.b9bd2831.css",
+    "static/js/main.426aa95b.js"
   ]
 }

@@ -16,7 +16,7 @@ function App() {
         <Route path='/' element={<FirstPage/>}/>
         <Route path='/BusinessCard' element={<SignIn/>}/>
         <Route path='/DigitalMenu' element={<SignUp/>}/>
-        <Route path='/OurProducts' element={<MainPage/>}/>
+        <Route path='/OurProductsDigitalMenu' element={<MainPage/>}/>
       </Routes>
       </BrowserRouter>
       </UsersProvider>
