@@ -34,8 +34,7 @@ export default function BusinessCard() {
             </div>
             <div id='businessCard4'>
                 <h1>תהליך יצירת כרטיס הביקור החכם שלי</h1>
-                <img width={'10%'} className='downArrowAnimation' src={downArrow} alt="down arrow" />
-
+                <img width={'10%'} className='downArrowAnimation' src={downArrow} alt="down arrow"/>
             </div>
             <div className='steps'>
                 <h1 className='stepsNumbers'>1</h1>
@@ -57,7 +56,7 @@ export default function BusinessCard() {
                 <h1 className='stepsH1'>מתחילים לקדם את העסק</h1>
                 <h3  className='stepsH3'>תוך 6-7 ימי עסקים תקבלו קישור לכרטיס הביקור שלכם ותוכלו לשתף אותו ברשתות החברתיות</h3>
             </div>
-            <img onClick={()=>{nav('/BusinessCard')}} src={makeCard} alt="makeCard" />
+            <img onClick={()=>{nav('/BusinessCard')}} style={{marginTop:'20px',marginBottom:'20px'}} src={makeCard} alt="makeCard" />
         <Footer/>
     </div>
   )
