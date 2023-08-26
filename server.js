@@ -18,8 +18,10 @@ const nodemailer = require('nodemailer');
 
 const userEmailSchema = db.Schema({
     name:String,
-    phoneNumber:Number,
+    phoneNumber:String,
     email:String,
+    address:String,
+    type:String
 })
 const userSchema = db.Schema({
     name:String,
@@ -28,6 +30,7 @@ const userSchema = db.Schema({
 })
 
 const userModel = db.model('user',userSchema)
+const userWithEmailModel = db.model('usersWithEmail',userEmailSchema)
 
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
@@ -123,7 +126,7 @@ app.post('/digitalMenu', async(req,res)=>
     let address = req.body.address
     let type = req.body.type
     let arr = {name:name,phoneNumber:phoneNumber,email:email,address:address,type:type}
-    let temp = await userModel.insertMany({
+    let temp = await userWithEmailModel.insertMany({
         name:name,
         phoneNumber:phoneNumber,
         email:email,
@@ -150,7 +153,7 @@ app.post('/sendBusinessCard', async(req,res)=>
     let address = req.body.address
     let type = req.body.type
     let arr = {name:name,phoneNumber:phoneNumber,email:email,address:address,type:type}
-    let temp = await userModel.insertMany({
+    let temp = await userWithEmailModel.insertMany({
         name:name,
         phoneNumber:phoneNumber,
         email:email,

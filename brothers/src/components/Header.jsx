@@ -46,7 +46,7 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
     {
     return <div id='smallMenu'>
       <a style={{textDecoration:'none'}} className='menuButtons' href="/OurProductsDigitalMenu">תפריט דיגיטלי</a>
-      <a style={{textDecoration:'none'}} className='menuButtons' href="">כרטיס ביקור</a>
+      <a style={{textDecoration:'none'}} className='menuButtons' href="/OurProductsBusinessCard">כרטיס ביקור</a>
     </div>
     }
   }
