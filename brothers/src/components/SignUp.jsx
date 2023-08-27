@@ -18,6 +18,8 @@ export default function SignUp() {
     const[phoneNumber,setPhoneNumber] = useState('');
     const[email,setEmail] = useState('');
     const[address,setAddress] = useState('');
+    const[stand,setStand] = useState('')
+    const[catalogMenu,setCatalogMenu] = useState('')
 
    const digitalMenu = ()=>
    {
@@ -32,6 +34,8 @@ export default function SignUp() {
                     phoneNumber:phoneNumber,
                     email:email ,
                     address:address,
+                    stand:stand,
+                    catalogMenu:catalogMenu,
                     type:'Menu/Catalog'
                 })
             }).then((res)=>{return res.json()})
@@ -61,6 +65,26 @@ export default function SignUp() {
             <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'  className='signInInput' type="text" />
             <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='מספר טלפון'  className='signInInput' type="text" />
             <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='כתובת/עיר'  className='signInInput' type="text" />
+            <h1 className='h1HomeMainTitle' style={{color:'black'}}>בכמה סטנדים תהיו מעוניינים ל <br /> QR Code <br />5 של  הקטלוג/התפריט חוץ מ<br />  סטנדים שתקבלו <span style={{color:'rgb(214, 194, 173)',borderBottom:'3px solid black', borderBottomRightRadius:'20%',borderBottomLeftRadius:'20%'}}> במתנה </span> </h1>
+        <select className='selection' onChange={(e)=>{setStand(e.target.value)}} name="stand" id="stand">
+          <option value="0">בחר</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10+">10+</option>
+        </select>
+        <h1 className='h1HomeMainTitle' style={{color:'black'}}>האם אתם מעוניינים בכרטיס ביקור לעסק שלכם </h1>
+        <select className='selection' onChange={(e)=>{setCatalogMenu(e.target.value)}} name="stand" id="stand">
+          <option value="0">בחר</option>
+          <option value="yes">כן</option>
+          <option value="no">לא</option>
+        </select>
         <img  style={{width:'70%'}} onClick={digitalMenu}  className='logo' src={button2} alt="" />
         </div>
             <a className='footerFont' href="https://wa.me/972525272910">

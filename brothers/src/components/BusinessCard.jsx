@@ -24,7 +24,7 @@ export default function BusinessCard() {
                 </a>
             </div>
             <div id='businessCard3'>
-            <h1 className='h1BusinessCard' style={{fontSize:'23px',marginBottom:'20px'}}>? למה אני צריך את <br /> כרטיס הביקור</h1>
+            <h1 className='h1BusinessCard' style={{fontSize:'23px',marginBottom:'20px'}}> למה אני צריך את <br />? כרטיס הביקור</h1>
             <h3 style={{fontSize:'15px', alignSelf:'flex-end'}} className='h3HomeMainTitle'>חיוג מהיר לעסק שלך - לחצן חיוג✅</h3>
             <h3 style={{fontSize:'15px', alignSelf:'flex-end'}} className='h3HomeMainTitle'>WhatsApp שליחת הודעת ✅</h3>
             <h3 style={{fontSize:'15px', alignSelf:'flex-end'}} className='h3HomeMainTitle'>שיתוף כרטיס הביקור הדיגיטלי✅<br /> ברשתות חברתיות </h3>

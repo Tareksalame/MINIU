@@ -21,6 +21,14 @@ const userEmailSchema = db.Schema({
     phoneNumber:String,
     email:String,
     address:String,
+    website:String,
+    instagram:String,
+    faceBook:String,
+    tikTok:String,
+    linkedIn:String,
+    whatsAppNum:String,
+    stand:String,
+    catalogMenu:String,
     type:String
 })
 const userSchema = db.Schema({
@@ -124,6 +132,8 @@ app.post('/digitalMenu', async(req,res)=>
     let phoneNumber = req.body.phoneNumber
     let email = req.body.email
     let address = req.body.address
+    let stand=req.body.stand;
+    let catalogMenu=req.body.catalogMenu;
     let type = req.body.type
     let arr = {name:name,phoneNumber:phoneNumber,email:email,address:address,type:type}
     let temp = await userWithEmailModel.insertMany({
@@ -131,6 +141,8 @@ app.post('/digitalMenu', async(req,res)=>
         phoneNumber:phoneNumber,
         email:email,
         address:address,
+        stand:stand,
+        catalogMenu:catalogMenu,
         type:type
     })
     if(temp !== null)
@@ -152,12 +164,28 @@ app.post('/sendBusinessCard', async(req,res)=>
     let email = req.body.email
     let address = req.body.address
     let type = req.body.type
+    let website=req.body.website;
+    let instagram=req.body.instagram;
+    let faceBook=req.body.faceBook;
+    let tikTok=req.body.tikTok;
+    let linkedIn=req.body.linkedIn;
+    let whatsAppNum=req.body.whatsAppNum;
+    let stand=req.body.stand;
+    let catalogMenu=req.body.catalogMenu;
     let arr = {name:name,phoneNumber:phoneNumber,email:email,address:address,type:type}
     let temp = await userWithEmailModel.insertMany({
         name:name,
         phoneNumber:phoneNumber,
         email:email,
         address:address,
+        website:website,
+        instagram:instagram,
+        faceBook:faceBook,
+        tikTok:tikTok,
+        linkedIn:linkedIn,
+        whatsAppNum:whatsAppNum,
+        stand:stand,
+        catalogMenu:catalogMenu,
         type:type
     })
     if(temp !== null)
@@ -194,9 +222,17 @@ app.post('/cardSign', async(req,res)=>
 })
 
 
+// app.get('/deleteall' , async(req,res)=>
+// {
+//     let temp = await userModel.deleteMany()
+//     res.send(temp)
+// })
+
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'brothers/build', 'index.html'));
   });
+
+
 
 
 
