@@ -77,7 +77,7 @@ export default function MainPage() {
             </div>
           </div>
           <div id='OurProducts2'>
-          <h1>למה אני <br /> צריך את התפריט <br /> הדגיטלי לעסק שלי ? </h1>
+          <h1>למה אני <br /> צריך את התפריט <br /> ? הדגיטלי לעסק שלי </h1>
           <h3 className='h3HomeMainTitle'>חוסכים זמן - במסעדה אין צורך לחלק תפריטים ללקוחות✅</h3>
           <h3 className='h3HomeMainTitle'>חוסכים כסף - אין צורך בהדפסת הרבה תפריטים✅</h3>
           <h3 className='h3HomeMainTitle'>מתאים לכל סוגי הסמארטפונים✅</h3>
@@ -91,7 +91,7 @@ export default function MainPage() {
         <h3 className='h3HomeMainTitle' style={{alignSelf:'center',marginRight:'0px'}}> התמונה להמחשה בלבד</h3>
           </div>
           <div  className="OurProducts3">
-            <h1 style={{fontSize:'30px',marginTop:'10%'}}>תפסיק לבזבז <br /> את הזמן <br /> ותתחיל לקדם <br /> את העסק שלך 
+            <h1 style={{fontSize:'30px',marginTop:'10%'}}> תתחיל לקדם <br /> את העסק שלך 
             </h1>
             <input  onChange={(e)=>{setName(e.target.value)}} placeholder='שם מלא/שם העסק' style={{textAlign:'end'}} className='signInInput' type="text" />
             <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'  className='signInInput' type="text" />

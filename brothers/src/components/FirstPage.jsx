@@ -106,7 +106,11 @@ export default function FirstPage() {
         <h2 className='h2HomeMainTitle'>אנו נעמוד לשירותכם בכל ימי השבוע 24/7, ונהיה מוכנים, לכל עדכון או תיקון שתצטרכו </h2>
 
         <img src={scanme} width={'90%'} alt="" />
-        <h2 className='h2HomeMainTitle'> QR במתנה תקבלו גם 5 סטנדים לסריקת ה </h2>
+        <h3 className='h3HomeMainTitle' style={{alignSelf:'center',marginRight:'0px'}}> התמונה להמחשה בלבד</h3>
+
+        <h2 className='h2HomeMainTitle' style={{marginBottom:'0px'}}>במתנה תקבלו גם 5 סטנדים לסריקת ה </h2>
+        <h2 className='h2HomeMainTitle' style={{marginTop:'0px'}} > QR Code</h2>
+
         <h1 className='h1HomeMainTitle' style={{fontSize:'40px',marginBottom:'0px'}}> אז למה ממתינים </h1>
         <div style={{marginTop:'0px',marginBottom:'10px',padding:'0px'}}>
         <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" /> 
@@ -116,7 +120,6 @@ export default function FirstPage() {
         <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" />
         <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" />
         </div>
-        <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>? רוצים גם לקבל במתנה דף ביזניס לעסק </h2>
         <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2>
         <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>
         <img width={'30%'} src={mousedown} alt="" />
@@ -124,28 +127,24 @@ export default function FirstPage() {
         <input value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
         <img width={'80%'} onClick={menuSign} src={button2} alt="" />
 
-        {/* <img style={{width:'50%',paddingBottom:'30%'}} className='logo' src={BlackMenu} alt="" /> */}
       </div>
       <div style={{marginTop:'30px'}} id='landingPageDiv'>
         <h1 style={{fontSize:'30px',backgroundColor:'rgb(214, 194, 173)',padding:'3%'}} className='h1HomeMainTitle'>  כרטיס ביקור דיגיטלי מקצועי </h1>
         <h2 className='h2HomeMainTitle'>יש לך עסק ? רוצה להקל על עצמך ועל הלקוחות שלך ? בוא נצור לך כרטיס ביקור דיגיטלי מותאם אישית לפי הבקשות שלך ולפי העיצוב שתרצה</h2>
         <img src={LANDINGPAGES} width={'95%'} alt="" />
-        <h2 style={{marginBottom:'0px'}} className='h2HomeMainTitle'> תקבלו עם דף הנחיתה גם </h2>
-        <h2 style={{marginTop:'0px'}} className='h2HomeMainTitle'> במתנה QR שני סטנדים לסריקת ה </h2>
-        <img src={scanme} width={'90%'} alt="" />
+        
         <h1 className='h1HomeMainTitle' style={{fontSize:'25px',backgroundColor:'rgb(214, 194, 173)',padding:'3%'}}>יתרונות של כרטיס ביקור דיגיטלי</h1>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>חיוג מהיר לעסק שלך - לחצן חיוג✅</h3>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>WhatsApp שליחת הודעת ✅</h3>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>שיתוף כרטיס הביקור הדיגיטלי ברשתות חברתיות✅</h3>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'> קישור לאתר שלך✅</h3>
-        <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>  (לידים) טופס יצירת קשר ✅</h3>
-        <h1 className='h1HomeMainTitle' style={{fontSize:'40px',marginBottom:'0px'}}> תפסיק לבזבז זמן</h1>
-        <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2>
-        <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>
+        <h1 className='h1HomeMainTitle' style={{fontSize:'30px',marginBottom:'0px'}}>הזמינו עכשיו את כרטיס הביקור הדגיטלי שלכם </h1>
+        {/* <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2> */}
+        {/* <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>/ */}
         <img width={'30%'}  src={mousedown} alt="" />
-        <input value={Name2} onChange={(e)=>{setName2(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
-        <input value={phoneNumber2} onChange={(e)=>{setPhoneNumber2(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
-        <img width={'80%'} onClick={cardSign} src={button2} alt="" />
+        {/* <input value={Name2} onChange={(e)=>{setName2(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" /> */}
+        {/* <input value={phoneNumber2} onChange={(e)=>{setPhoneNumber2(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" /> */}
+        <img width={'80%'} onClick={()=>{nav('/BusinessCard')}} src={button2} alt="" />
 
       </div>
       <Footer/>
@@ -157,7 +156,3 @@ export default function FirstPage() {
 
 
 
-
-        {/* <img style={{width:'70%'}} onClick={()=>{nav('/signin')}} className='logo' src={signin} alt="" />
-        <img style={{width:'70%'}} onClick={()=>{nav('/signup')}} className='logo' src={signup} alt="" />
-        <img   style={{width:'70%'}} onClick={()=>{nav('/home')}} className='logo' src={guest} alt="" /> */}

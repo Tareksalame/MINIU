@@ -11,22 +11,21 @@ export default function Footer() {
   return (
     <div className='footer'>
         <div id='socialMediaDiv'>
-          <a target='_blank' href='https://wa.me/972525272910' className='footerFont'> זמינים בשבילכם גם בווטסאפ </a>
+          <h3 style={{color:'white'}} className='footerFont'>Contact Us</h3>
+          <div style={{display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'row'}}>
           <a target='_blank' className='footerFont' href="https://wa.me/972525272910">
-            <img src={whatsapp} width={'20%'} alt="whatsapp" />
+            <img src={whatsapp} style={{marginTop:'10px',marginBottom:'20px'}} width={'50%'} alt="whatsapp" />
           </a>
-          <h3 className='footerFont'>תמצאו אותנו גם באניסטגרם </h3>
           <a target='_blank' href="https://instagram.com/miniuforu?igshid=OGQ5ZDc2ODk2ZA==">
-            <img src={instagram} width={'20%'} alt="whatsapp" />
+            <img src={instagram} width={'50%'} alt="whatsapp" />
           </a>
+          </div>
         </div>
         <div id='footerNav'>
           <a href='/' style={{marginTop:'20px'}}  className='footerFont'>דף הבית</a>
-          {/* <a href='/OurProducts' className='footerFont'>?מי אנחנו</a> */}
           <a href='/DigitalMenu' className='footerFont'>הזמנת תפריט דיגיטלי</a>
           <a href='/BusinessCard' style={{marginBottom:'20px'}} className='footerFont'>הזמנת כרטיס ביקור דיגיטלי</a>
-          {/* <a href='/OurProducts' className='footerFont'></a> */}
-        <img style={{width:'100%'}}  onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
+        <img style={{width:'50%'}}  onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
         </div>
     </div>
   )
