@@ -133,7 +133,7 @@ export default function FirstPage() {
         <h2 className='h2HomeMainTitle'>יש לך עסק ? רוצה להקל על עצמך ועל הלקוחות שלך ? בוא נצור לך כרטיס ביקור דיגיטלי מותאם אישית לפי הבקשות שלך ולפי העיצוב שתרצה</h2>
         <img src={LANDINGPAGES} width={'95%'} alt="" />
         
-        <h1 className='h1HomeMainTitle' style={{fontSize:'25px',backgroundColor:'rgb(214, 194, 173)',padding:'3%'}}>יתרונות של כרטיס ביקור דיגיטלי</h1>
+        <h1 className='h1HomeMainTitle' style={{fontSize:'25px',borderTop:'10px solid rgb(214, 194, 173)',borderBottom:'10px solid rgb(214, 194, 173)',borderRight:'0px',borderLeft:'0px',borderStyle:'double',padding:'3%',borderRadius:'70px'}}>יתרונות של כרטיס ביקור דיגיטלי</h1>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>חיוג מהיר לעסק שלך - לחצן חיוג✅</h3>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>WhatsApp שליחת הודעת ✅</h3>
         <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>שיתוף כרטיס הביקור הדיגיטלי ברשתות חברתיות✅</h3>

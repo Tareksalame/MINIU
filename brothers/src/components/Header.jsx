@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import close from '../images/X.svg'
+import { useNavigate } from 'react-router-dom'
 import MENU from '../images/MENU.svg'
 import WhiteMenu from '../images/MINI-U-White.svg'
 import userContext from '../userContext'
@@ -10,7 +11,7 @@ import userContext from '../userContext'
 
 export default function Header() {
   const[showProductsFlag,setShowProductsFlag] = useState(false)
-
+  let nav = useNavigate()
   const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>
     {
