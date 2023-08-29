@@ -34,11 +34,11 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
   {
     if(flag == false)
     {
-      return <img onClick={()=>{setFlag(!flag);setShowMenu('flex')}} style={{width:'8%'}} src={MENU} alt="menu" />
+      return <img className='openClose' onClick={()=>{setFlag(!flag);setShowMenu('flex')}}  src={MENU} alt="menu" />
     }
     else
     {
-      return <img onClick={()=>{setFlag(!flag);setShowMenu('none')}} style={{width:'8%'}} src={close} alt="menu" />
+      return <img className='openClose' onClick={()=>{setFlag(!flag);setShowMenu('none')}}  src={close} alt="menu" />
     }
   }
   const showProducts = ()=>
@@ -54,8 +54,12 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
   return (
     <div>
         <header className='appBar'>
-          <img  style={{width:'25%'}} src={WhiteMenu} alt="logo" />
+          <img id='mainLogominiu' src={WhiteMenu} alt="logo" />
           {theFlag()}
+          <a style={{textDecoration:'none'}} className='menuButtonsFull' href="/OurProductsBusinessCard">כרטיס ביקור</a>
+          <a style={{textDecoration:'none'}} className='menuButtonsFull' href="/OurProductsDigitalMenu">תפריט דיגיטלי</a>
+          <a style={{textDecoration:'none'}} href='/' className='menuButtonsFull'>דף הבית</a>
+
         </header>
         <div className='hidden' id='menuShow' style={{display:showMenu}}>
           <a style={{textDecoration:'none'}} href='/' className='menuButtons'>דף הבית</a>

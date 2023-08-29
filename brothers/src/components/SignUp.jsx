@@ -57,14 +57,14 @@ export default function SignUp() {
 
   return (
     <div className='signUpMainDiv' style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-        <img style={{width:'70%'}} onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
+        <img className='LogoForSignUpIn' onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
         <div style={{paddingTop:'0%',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             <h1 className='h1HomeMainTitle' style={{color:'black'}}>טופס ליצירת תפריט/קטלוג דיגיטלי מתקדם</h1>
             <img width={'30%'} className='Arrow'  src={mousedown} alt="" />
-            <input  onChange={(e)=>{setName(e.target.value)}} placeholder='שם מלא/שם העסק' style={{textAlign:'end'}} className='signInInput' type="text" />
-            <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'  className='signInInput' type="text" />
-            <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='מספר טלפון'  className='signInInput' type="text" />
-            <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='כתובת/עיר'  className='signInInput' type="text" />
+            <input  onChange={(e)=>{setName(e.target.value)}} placeholder='שם מלא/שם העסק' style={{textAlign:'end'}}     className='signUpInput' type="text" />
+            <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'     className='signUpInput' type="text" />
+            <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='מספר טלפון'  className='signUpInput' type="text" />
+            <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='כתובת/עיר'       className='signUpInput' type="text" />
             <h1 className='h1HomeMainTitle' style={{color:'black'}}>בכמה סטנדים תהיו מעוניינים ל <br /> QR Code <br />5 של  הקטלוג/התפריט חוץ מ<br />  סטנדים שתקבלו <span style={{color:'rgb(214, 194, 173)',borderBottom:'3px solid black', borderBottomRightRadius:'20%',borderBottomLeftRadius:'20%'}}> במתנה </span> </h1>
         <select className='selection' onChange={(e)=>{setStand(e.target.value)}} name="stand" id="stand">
           <option value="0">בחר</option>

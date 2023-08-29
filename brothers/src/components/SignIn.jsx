@@ -87,15 +87,15 @@ export default function SignIn() {
   if(section == 1)
   {
     return <div className='signUpMainDiv' style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-    <img style={{width:'70%'}} onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
+        <img className='LogoForSignUpIn' onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
     <Numbers setSection={setSection} section={section}/>
     <div style={{paddingTop:'0%',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
         <h1 className='h1HomeMainTitle' style={{color:'black'}}>טופס ליצירת כרטיס ביקור דיגיטלי מתקדם</h1>
         <img width={'30%'} className='Arrow'  src={mousedown} alt="" />
-        <input  onChange={(e)=>{setName(e.target.value)}} placeholder='שם מלא/שם העסק' style={{textAlign:'end'}} className='signInInput' type="text" />
-        <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'  className='signInInput' type="text" />
-        <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='מספר טלפון'  className='signInInput' type="text" />
-        <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='כתובת/עיר'  className='signInInput' type="text" />
+        <input  onChange={(e)=>{setName(e.target.value)}} placeholder='שם מלא/שם העסק' style={{textAlign:'end'}} className='signUpInput' type="text" />
+        <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'  className='signUpInput' type="text" />
+        <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='מספר טלפון'  className='signUpInput' type="text" />
+        <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='כתובת/עיר'  className='signUpInput' type="text" />
     <img  style={{width:'90%'}} onClick={toSection2}  className='logo' src={letsContinue} alt="" />
     </div>
         <a className='footerFont' href="https://wa.me/972525272910">
@@ -109,17 +109,17 @@ export default function SignIn() {
   {
     // setText1('black')
     return  <div className='signUpMainDiv' style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-    <img style={{width:'70%'}} onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
+        <img className='LogoForSignUpIn' onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
     <Numbers setSection={setSection} section={section}/>
     <div style={{paddingTop:'0%',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
         <h1 className='h1HomeMainTitle' style={{color:'black'}}>טופס ליצירת כרטיס ביקור דיגיטלי מתקדם</h1>
         <img width={'30%'} className='Arrow'  src={mousedown} alt="" />
-        <input value={website} style={{textAlign:'end'}} onChange={(e)=>{setWebsite(e.target.value)}}  placeholder='קישור לאתר אינטרנט'  className='signInInput' type="text" />
-        <input value={whatsAppNum} style={{textAlign:'end'}} onChange={(e)=>{setWhatsAppNum(e.target.value)}}  placeholder='ווטסאפ של העסק'  className='signInInput' type="text" />
-        <input value={faceBook} style={{textAlign:'end'}} onChange={(e)=>{setFaceBook(e.target.value)}}  placeholder='פייסבוק'  className='signInInput' type="text" />
-        <input value={instagram} style={{textAlign:'end'}} onChange={(e)=>{setInstagram(e.target.value)}}  placeholder='אינסטגרם'  className='signInInput' type="text" />
-        <input value={tikTok} style={{textAlign:'end'}} onChange={(e)=>{setTikTok(e.target.value)}}  placeholder='טיקטוק'  className='signInInput' type="text" />
-        <input value={linkedIn} style={{textAlign:'end'}} onChange={(e)=>{setLinkedIn(e.target.value)}}  placeholder='לינקדאין'  className='signInInput' type="text" />
+        <input value={website} style={{textAlign:'end'}} onChange={(e)=>{setWebsite(e.target.value)}}  placeholder='קישור לאתר אינטרנט'  className='signUpInput' type="text" />
+        <input value={whatsAppNum} style={{textAlign:'end'}} onChange={(e)=>{setWhatsAppNum(e.target.value)}}  placeholder='ווטסאפ של העסק'  className='signUpInput' type="text" />
+        <input value={faceBook} style={{textAlign:'end'}} onChange={(e)=>{setFaceBook(e.target.value)}}  placeholder='פייסבוק'  className='signUpInput' type="text" />
+        <input value={instagram} style={{textAlign:'end'}} onChange={(e)=>{setInstagram(e.target.value)}}  placeholder='אינסטגרם'  className='signUpInput' type="text" />
+        <input value={tikTok} style={{textAlign:'end'}} onChange={(e)=>{setTikTok(e.target.value)}}  placeholder='טיקטוק'  className='signUpInput' type="text" />
+        <input value={linkedIn} style={{textAlign:'end'}} onChange={(e)=>{setLinkedIn(e.target.value)}}  placeholder='לינקדאין'  className='signUpInput' type="text" />
 
     <img  style={{width:'90%'}} onClick={()=>{setSection(3)}}  className='logo' src={letsContinue} alt="" />
     </div>
@@ -132,7 +132,7 @@ export default function SignIn() {
   else
   {
     return <div className='signUpMainDiv' style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-    <img style={{width:'70%'}} onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
+        <img className='LogoForSignUpIn' onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
     <Numbers setSection={setSection} section={section}/>
     <div style={{paddingTop:'0%',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
         <h1 className='h1HomeMainTitle' style={{color:'black'}}>טופס ליצירת כרטיס ביקור דיגיטלי מתקדם</h1>
@@ -148,7 +148,7 @@ export default function SignIn() {
           <option value="yes">כן</option>
           <option value="no">לא</option>
         </select>
-    <img  style={{width:'70%',marginTop:'60px'}} onClick={digitalMenu}  className='logo' src={button2} alt="" />
+    <img  style={{marginTop:'60px'}} onClick={digitalMenu}  className='iWantToGrowUp' src={button2} alt="" />
     </div>
         <a className='footerFont' href="https://wa.me/972525272910">
         <img src={whatsapp} width={'15%'} alt="whatsapp" />

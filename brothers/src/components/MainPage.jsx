@@ -60,18 +60,18 @@ export default function MainPage() {
           <h1 style={{color:'black'}}>תפריט דיגיטלי מקצועי</h1>
         </div>
           <div id='welcome'>
-            <h1  style={{color:'white',fontSize:'19px',marginTop:'15%'}}>תפריט דיגיטלי מותאם <br /> אישית למסעדות ולעסקים</h1>
+            <h1 id='createMenu' style={{color:'white',marginTop:'15%'}}>תפריט דיגיטלי מותאם <br /> אישית למסעדות ולעסקים</h1>
             <img style={{marginBottom:'5%'}} onClick={()=>{nav('/DigitalMenu')}} src={letsstartButton} alt="" />
           </div>
           <div id='OurProducts'>
-            <h1>למי מתאים התפריט <br />? הדגיטלי </h1>
+            <h1 id='ForWho'>למי מתאים התפריט <br />? הדגיטלי </h1>
             <div className='menuForWho'>
-              <img className='menuAndcatalog' width={'80%'} src={menuRestaurant} alt="" />
+              <img className='menuAndcatalog'  src={menuRestaurant} alt="" />
               <h3 className='h3Menu'>תפריט למסעדות</h3>
               <h4 className='h4Menu'>תפריט דיגיטלי, שמאפשר ללקוחות לסרוק <br /> ברקוד ולקבל את תפריט המסעדה ישירות בנייד שלהם</h4>
             </div>
             <div className='menuForWho'>
-            <img className='menuAndcatalog' width={'80%'} src={cream} alt="" />
+            <img className='menuAndcatalog'  src={cream} alt="" />
               <h3 className='h3Menu'>קטלוג לעסקים</h3>
               <h4 className='h4Menu'>,קטלוג לעסק שנפתח בנייד דרך סריקת ברקוד<br /> מתאים לעסקים שמציעים מספר שירותים/מוצרים ללקוחות שלהם</h4>
             </div>
@@ -85,19 +85,19 @@ export default function MainPage() {
           <h3 className='h3HomeMainTitle'>מאפשר למסעדות ולעסקים לשתף את התפריט✅<br /> או קטלוג המוצרים ברשתות החברתיות </h3>
           <h3 className='h3HomeMainTitle'>עדכון מהיר לתפריט ללא צורך בהדפסה חדשה לתפריט חדש✅</h3>
           </div>
-          <div id='OurProducts'>
+          <div id='OurProducts4'>
             <h1>כל זה ותקבל במתנה עם התפריט/הקטלוג שלך <br /> 5 <br /> סטנדים לסריקת <br /> QR ה <br /> של התפריט/קטלוג</h1>
-        <img src={scanme} width={'90%'} alt="" />
+        <img src={scanme} id='QRImage' alt="" />
         <h3 className='h3HomeMainTitle' style={{alignSelf:'center',marginRight:'0px'}}> התמונה להמחשה בלבד</h3>
           </div>
           <div  className="OurProducts3">
-            <h1 style={{fontSize:'30px',marginTop:'10%'}}> תתחיל לקדם <br /> את העסק שלך 
+            <h1 id='letsStartOurProducts3' style={{marginTop:'10%'}}> תתחיל לקדם <br /> את העסק שלך 
             </h1>
             <input  onChange={(e)=>{setName(e.target.value)}} placeholder='שם מלא/שם העסק' style={{textAlign:'end'}} className='signInInput' type="text" />
             <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'  className='signInInput' type="text" />
             <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='מספר טלפון'  className='signInInput' type="text" />
             <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='כתובת/עיר'  className='signInInput' type="text" />
-        <img  style={{width:'70%'}} onClick={digitalMenu}  className='logo' src={button2} alt="" />
+        <img className='iWantToGrowUp'  onClick={digitalMenu}   src={button2} alt="" />
           </div>
           <Footer/>
           

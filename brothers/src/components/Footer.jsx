@@ -14,10 +14,10 @@ export default function Footer() {
           <h3 style={{color:'white'}} className='footerFont'>Contact Us</h3>
           <div style={{display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'row'}}>
           <a target='_blank' className='footerFont' href="https://wa.me/972525272910">
-            <img src={whatsapp} style={{marginTop:'10px',marginBottom:'20px'}} width={'50%'} alt="whatsapp" />
+            <img src={whatsapp} className='instagramWhatsapp' style={{marginTop:'10px',marginBottom:'20px'}} alt="whatsapp" />
           </a>
           <a target='_blank' href="https://instagram.com/miniuforu?igshid=OGQ5ZDc2ODk2ZA==">
-            <img src={instagram} width={'50%'} alt="whatsapp" />
+            <img src={instagram} className='instagramWhatsapp' alt="whatsapp" />
           </a>
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function Footer() {
           <a href='/' style={{marginTop:'20px'}}  className='footerFont'>דף הבית</a>
           <a href='/DigitalMenu' className='footerFont'>הזמנת תפריט דיגיטלי</a>
           <a href='/BusinessCard' style={{marginBottom:'20px'}} className='footerFont'>הזמנת כרטיס ביקור דיגיטלי</a>
-        <img style={{width:'50%'}}  onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
+        <img id='MiniuLogoFooter'  onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
         </div>
     </div>
   )

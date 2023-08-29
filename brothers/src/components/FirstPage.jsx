@@ -80,13 +80,13 @@ export default function FirstPage() {
 
   const nav = useNavigate()
   return (
-    <div style={{position:"static", paddingTop:'20%'}} className='mainPageMainDiv'>
+    <div style={{position:"static"}} className='mainPageMainDiv'>
       <Header/>
       <div id='homeMainDiv'>
         <h1 className='h1HomeMainTitle'>? בעל מסעדה ? בעל עסק  <br /> !הגיע הזמן לשדרג את העסק שלך</h1>
         <h1 className='h1HomeMainTitle' style={{marginBottom:'0px',color:'rgb(214, 194, 173)',fontWeight:'normal',background:'black',border:'5px solid black',borderRadius:'10px',width:'80%'}}>MINIU - ברוכים הבאים ל</h1>
         <h1 className='h1HomeMainTitle' style={{fontSize:'30px',fontWeight:'900'}}> תפריט דיגיטלי ודפי נחיתה למסעדות ולעסקים</h1>
-        <img src={MENUS} width={'90%'} alt="" />
+        <img src={MENUS} id='menusPhotoFirstPage' alt="" />
         <h3 className='h3HomeMainTitle'>חוסכים זמן - אין צורך לחלק תפריטים ללקוחות✅</h3>
         <h3 className='h3HomeMainTitle'>חוסכים כסף - אין צורך בהדפסת הרבה תפריטים✅</h3>
         <h3 className='h3HomeMainTitle'>מתאים לכל סוגי הסמארטפונים✅</h3>
@@ -95,37 +95,40 @@ export default function FirstPage() {
         <h2 className='waisTime'>?אז למה לבזבז את הזמן <br />
         תשדרגו את העסק שלכם עכשיו עם <br /> התפריט הדיגיטלי
         </h2>
-        <img width={'90%'} src={button1} onClick={()=>{nav('/DigitalMenu')}} alt="" />
-        <img className='menuAndcatalog' width={'80%'} src={menuRestaurant} alt="" />
-        <img className='menuAndcatalog' width={'80%'} src={cream} alt="" />
-
-        
-        <h1 className='h1HomeMainTitle' style={{fontSize:'25px',marginTop:'50px',paddingTop:'10px',paddingBottom:'10px',backgroundColor:'rgb(214, 194, 173)'}}>הגיע הזמן לשדרג את העסק שלכם</h1>
+        <img className='clickToSTartImage' src={button1} onClick={()=>{nav('/DigitalMenu')}} alt="" />
+        <div id='menuAndCatalogDiv'>
+        <img className='menuAndcatalog' src={menuRestaurant} alt="" />
+        <img className='menuAndcatalog' src={cream} alt="" />
+        </div>
+        <div id='InformationAndQRCodeDiv'>
+        <div id='informationsDiv'>
+        <h1 className='h1HomeMainTitle' style={{fontSize:'25px',marginTop:'50px',paddingTop:'10px',paddingBottom:'10px',backgroundColor:'rgb(214, 194, 173)',borderRadius:'10px',padding:'2%'}}>הגיע הזמן לשדרג את העסק שלכם</h1>
         <h2 className='h2HomeMainTitle'>זה הזמן לשדרג את העסק שלכם עם התפריט הדיגיטלי, ידוע לנו כמה זה חשוב דעת הלקוחות לכל עסק, לכן צריך לדאוג לנוחות של הלקוחות ולשירות הכי טוב, התפריט הדיגיטלי בחנות/במסעדה שלכם הוא אחד השידרוגים הכי חשובים כדי לתת ללקוחות את הנוחות הזו</h2>
         <h2 className='h2HomeMainTitle'>העסקים מבזבזים הרבה כסף גם על תפריטים, וזה הזמן לחסוך את הכסף הזה ולהשתמש בו כדי לקדם את העסק שלך, והשידרוג הראשון שצריך לעשות זה התפריט הדיגיטלי </h2>
         <h2 className='h2HomeMainTitle'>אנו נעמוד לשירותכם בכל ימי השבוע 24/7, ונהיה מוכנים, לכל עדכון או תיקון שתצטרכו </h2>
-
-        <img src={scanme} width={'90%'} alt="" />
+        </div>
+        <div id='QRDiv'>
+        <img src={scanme} id='QRImage' alt="" />
         <h3 className='h3HomeMainTitle' style={{alignSelf:'center',marginRight:'0px'}}> התמונה להמחשה בלבד</h3>
-
         <h2 className='h2HomeMainTitle' style={{marginBottom:'0px'}}>במתנה תקבלו גם 5 סטנדים לסריקת ה </h2>
         <h2 className='h2HomeMainTitle' style={{marginTop:'0px'}} > QR Code</h2>
-
-        <h1 className='h1HomeMainTitle' style={{fontSize:'40px',marginBottom:'0px'}}> אז למה ממתינים </h1>
+        </div>
+        </div>
+        <h1 className='h1HomeMainTitle' id='WhatAreYouWaitingFor' style={{marginBottom:'0px'}}> אז למה ממתינים </h1>
         <div style={{marginTop:'0px',marginBottom:'10px',padding:'0px'}}>
-        <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" /> 
-        <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" />
-        <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" />
-        <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" />
-        <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" />
-        <img src={danger} style={{margin:'0px',padding:'0px'}} width={'10%'} alt="" />
+        <img src={danger} className='exclamationMark' style={{margin:'0px',padding:'0px'}} alt="exclamationMark" /> 
+        <img src={danger} className='exclamationMark' style={{margin:'0px',padding:'0px'}} alt="exclamationMark" />
+        <img src={danger} className='exclamationMark' style={{margin:'0px',padding:'0px'}} alt="exclamationMark" />
+        <img src={danger} className='exclamationMark' style={{margin:'0px',padding:'0px'}} alt="exclamationMark" />
+        <img src={danger} className='exclamationMark' style={{margin:'0px',padding:'0px'}} alt="exclamationMark" />
+        <img src={danger} className='exclamationMark' style={{margin:'0px',padding:'0px'}} alt="exclamationMark" />
         </div>
         <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2>
         <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>
-        <img width={'30%'} src={mousedown} alt="" />
+        <img src={mousedown} className='mouseDown' alt="mouseDown" />
         <input value={Name} onChange={(e)=>{setName(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" />
         <input value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" />
-        <img width={'80%'} onClick={menuSign} src={button2} alt="" />
+        <img className='iWantToGrowUp' onClick={menuSign} src={button2} alt="" />
 
       </div>
       <div style={{marginTop:'30px'}} id='landingPageDiv'>
@@ -134,18 +137,13 @@ export default function FirstPage() {
         <img src={LANDINGPAGES} width={'95%'} alt="" />
         
         <h1 className='h1HomeMainTitle' style={{fontSize:'25px',borderTop:'10px solid rgb(214, 194, 173)',borderBottom:'10px solid rgb(214, 194, 173)',borderRight:'0px',borderLeft:'0px',borderStyle:'double',padding:'3%',borderRadius:'70px'}}>יתרונות של כרטיס ביקור דיגיטלי</h1>
-        <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>חיוג מהיר לעסק שלך - לחצן חיוג✅</h3>
-        <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>WhatsApp שליחת הודעת ✅</h3>
-        <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'>שיתוף כרטיס הביקור הדיגיטלי ברשתות חברתיות✅</h3>
-        <h3 style={{fontSize:'15px'}} className='h3HomeMainTitle'> קישור לאתר שלך✅</h3>
+        <h3 className='h3HomeMainTitle'>חיוג מהיר לעסק שלך - לחצן חיוג✅</h3>
+        <h3 className='h3HomeMainTitle'>WhatsApp שליחת הודעת ✅</h3>
+        <h3 className='h3HomeMainTitle'>שיתוף כרטיס הביקור הדיגיטלי ברשתות חברתיות✅</h3>
+        <h3 className='h3HomeMainTitle'> קישור לאתר שלך✅</h3>
         <h1 className='h1HomeMainTitle' style={{fontSize:'30px',marginBottom:'0px'}}>הזמינו עכשיו את כרטיס הביקור הדגיטלי שלכם </h1>
-        {/* <h2 style={{margin:'0px'}} className='h2HomeMainTitle'>הירשמו עכשיו </h2> */}
-        {/* <h2 style={{margin:'0px',marginBottom:'10px'}} className='h2HomeMainTitle'>ואנחנו ניצור איתכם קשר</h2>/ */}
-        <img width={'30%'}  src={mousedown} alt="" />
-        {/* <input value={Name2} onChange={(e)=>{setName2(e.target.value)}} className='namePhoneInput' placeholder='שם מלא/שם העסק' type="text" /> */}
-        {/* <input value={phoneNumber2} onChange={(e)=>{setPhoneNumber2(e.target.value)}} className='namePhoneInput' placeholder='מספר טלפון' type="text" /> */}
-        <img width={'80%'} onClick={()=>{nav('/BusinessCard')}} src={button2} alt="" />
-
+        <img className='mouseDown' src={mousedown} alt="" />
+        <img className='iWantToGrowUp' onClick={()=>{nav('/BusinessCard')}} src={button2} alt="" />
       </div>
       <Footer/>
     </div>
