@@ -56,15 +56,16 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
         <header className='appBar'>
           <img id='mainLogominiu' src={WhiteMenu} alt="logo" />
           {theFlag()}
+          <a style={{textDecoration:'none'}} href='/OurCustomers' className='menuButtonsFull'> הלקוחות שלנו</a>
           <a style={{textDecoration:'none'}} className='menuButtonsFull' href="/OurProductsBusinessCard">כרטיס ביקור</a>
           <a style={{textDecoration:'none'}} className='menuButtonsFull' href="/OurProductsDigitalMenu">תפריט דיגיטלי</a>
           <a style={{textDecoration:'none'}} href='/' className='menuButtonsFull'>דף הבית</a>
-
         </header>
         <div className='hidden' id='menuShow' style={{display:showMenu}}>
           <a style={{textDecoration:'none'}} href='/' className='menuButtons'>דף הבית</a>
-          <a style={{textDecoration:'none',paddingBottom:'40px'}} onClick={()=>{setShowProductsFlag(!showProductsFlag)}} className='menuButtons'>המוצרים שלנו</a>
+          <a style={{textDecoration:'none'}} onClick={()=>{setShowProductsFlag(!showProductsFlag)}} className='menuButtons'>המוצרים שלנו</a>
           {showProducts()}
+          <a style={{textDecoration:'none'}} href='/OurCustomers' className='menuButtons'> הלקוחות שלנו</a>
           {/* <a style={{textDecoration:'none'}} href='#whoWeAre' className='menuButtons'>? מי אנחנו</a> */}
         </div>
         

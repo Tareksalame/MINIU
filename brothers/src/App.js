@@ -7,6 +7,7 @@ import MainPage from './components/MainPage';
 import FirstPage from './components/FirstPage';
 import { UsersProvider } from './userContext';
 import BusinessCard from './components/BusinessCard';
+import OurCostumers from './components/OurCostumers';
 function App() {
 
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path='/DigitalMenu' element={<SignUp/>}/>
         <Route path='/OurProductsDigitalMenu' element={<MainPage/>}/>
         <Route path='/OurProductsBusinessCard' element={<BusinessCard/>}/>
-
+        <Route path='/OurCustomers' element={<OurCostumers/>}/>
       </Routes>
       </BrowserRouter>
       </UsersProvider>
