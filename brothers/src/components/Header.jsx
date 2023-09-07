@@ -34,11 +34,11 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
   {
     if(flag == false)
     {
-      return <img className='openClose' onClick={()=>{setFlag(!flag);setShowMenu('flex')}}  src={MENU} alt="menu" />
+      return <img id='openClose' onClick={()=>{setFlag(!flag);setShowMenu('flex')}}  src={MENU} alt="menu" />
     }
     else
     {
-      return <img className='openClose' onClick={()=>{setFlag(!flag);setShowMenu('none')}}  src={close} alt="menu" />
+      return <img id='openClose' onClick={()=>{setFlag(!flag);setShowMenu('none')}}  src={close} alt="menu" />
     }
   }
   const showProducts = ()=>
@@ -48,6 +48,8 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
     return <div id='smallMenu'>
       <a style={{textDecoration:'none'}} className='menuButtons' href="/OurProductsDigitalMenu">תפריט דיגיטלי</a>
       <a style={{textDecoration:'none'}} className='menuButtons' href="/OurProductsBusinessCard">כרטיס ביקור</a>
+      <a style={{textDecoration:'none'}} className='menuButtons' href="/LandingPages"> דפי נחיתה/אתרי אינטרנט</a>
+
     </div>
     }
   }
@@ -57,6 +59,7 @@ hiddenElements.forEach((el)=>{observer.observe(el)})
           <img id='mainLogominiu' src={WhiteMenu} alt="logo" />
           {theFlag()}
           <a style={{textDecoration:'none'}} href='/OurCustomers' className='menuButtonsFull'> הלקוחות שלנו</a>
+          <a style={{textDecoration:'none'}} className='menuButtonsFull' href="/LandingPages">דפי נחיתה/אתרי אינטרנט</a>
           <a style={{textDecoration:'none'}} className='menuButtonsFull' href="/OurProductsBusinessCard">כרטיס ביקור</a>
           <a style={{textDecoration:'none'}} className='menuButtonsFull' href="/OurProductsDigitalMenu">תפריט דיגיטלי</a>
           <a style={{textDecoration:'none'}} href='/' className='menuButtonsFull'>דף הבית</a>

@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.a29495fb.css",
-    "main.js": "/static/js/main.58a96fde.js",
+    "main.css": "/static/css/main.bc6f9f12.css",
+    "main.js": "/static/js/main.f2b0da0a.js",
     "static/js/787.0d79f9c0.chunk.js": "/static/js/787.0d79f9c0.chunk.js",
+    "static/media/website1.png": "/static/media/website1.eac2defc7ca9c1ed7c5f.png",
+    "static/media/website2.png": "/static/media/website2.ad09a8d1f8e22bd13ba1.png",
     "static/media/menushow.png": "/static/media/menushow.77aa5ed9b2a1376dbdce.png",
     "static/media/landingPage.png": "/static/media/landingPage.03397ed84183531271dc.png",
     "static/media/menurestaurant.jpg": "/static/media/menurestaurant.e1e17443509a5bda9f85.jpg",
@@ -10,6 +12,7 @@
     "static/media/MINI-U.svg": "/static/media/MINI-U.d653276ef6444267551b5e7adb4a491b.svg",
     "static/media/MINI-U-White.svg": "/static/media/MINI-U-White.71b51556451543cfacb217c9161a90ea.svg",
     "static/media/cream.jpg": "/static/media/cream.c5bfd9b64267a19439f0.jpg",
+    "static/media/basket-ball.png": "/static/media/basket-ball.077cef803584ba5fb01d.png",
     "static/media/abojameltours.svg": "/static/media/abojameltours.ba87ce343314d5c3900c3d284181794d.svg",
     "static/media/button2.svg": "/static/media/button2.5feb8c1955a562766a454f1c4dec2789.svg",
     "static/media/instagram.png": "/static/media/instagram.75e0546a6b5abe4c0506.png",
@@ -24,17 +27,18 @@
     "static/media/letsstartblack.svg": "/static/media/letsstartblack.294e8dfe95f7b04b683cc8011f5b73ac.svg",
     "static/media/telegram.png": "/static/media/telegram.9f245f3233b0faea9ffa.png",
     "static/media/tiktok.png": "/static/media/tiktok.0b5f4f1b378580b9cbaf.png",
+    "static/media/ball.png": "/static/media/ball.d31e0b4fe55519036986.png",
     "static/media/2.svg": "/static/media/2.540119c9d7ca5accf8b7f17904391f34.svg",
     "static/media/qatrelnada.svg": "/static/media/qatrelnada.0e5f6b3698134f8eea016fa547bb69fd.svg",
     "static/media/MENU.svg": "/static/media/MENU.1e91ae0949b7e667bffa96eb42f9fb89.svg",
     "static/media/X.svg": "/static/media/X.d711e0f8b66e7902bfa2799d2f631434.svg",
     "index.html": "/index.html",
-    "main.a29495fb.css.map": "/static/css/main.a29495fb.css.map",
-    "main.58a96fde.js.map": "/static/js/main.58a96fde.js.map",
+    "main.bc6f9f12.css.map": "/static/css/main.bc6f9f12.css.map",
+    "main.f2b0da0a.js.map": "/static/js/main.f2b0da0a.js.map",
     "787.0d79f9c0.chunk.js.map": "/static/js/787.0d79f9c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a29495fb.css",
-    "static/js/main.58a96fde.js"
+    "static/css/main.bc6f9f12.css",
+    "static/js/main.f2b0da0a.js"
   ]
 }

@@ -24,7 +24,9 @@ export default function Footer() {
         <div id='footerNav'>
           <a href='/' style={{marginTop:'20px'}}  className='footerFont'>דף הבית</a>
           <a href='/DigitalMenu' className='footerFont'>הזמנת תפריט דיגיטלי</a>
-          <a href='/BusinessCard' style={{marginBottom:'20px'}} className='footerFont'>הזמנת כרטיס ביקור דיגיטלי</a>
+          <a href='/BusinessCard'  className='footerFont'>הזמנת כרטיס ביקור דיגיטלי</a>
+          <a href='/LandingPageSign' style={{marginBottom:'20px'}} className='footerFont'>הזמנת דף נחיתה/אתר אינטרנט</a>
+
         <img id='MiniuLogoFooter'  onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
         </div>
     </div>

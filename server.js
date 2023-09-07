@@ -112,7 +112,7 @@ function sendWelcomeEmail(name,number,type) {
         from: 'miniuforu@gmail.com',
         to: arr.email,
         subject: 'Welcome' + ' ' + arr.name,
-        text:'Thank You For Choosing us,\n we will call you back soon.\nif you have any question\nyou can contact us on Whatsapp \n' +WhatsappNumber ,
+        text:'Thank You For Choosing us,\nwe will call you back soon.\nif you have any question\nyou can contact us on Whatsapp\n' +WhatsappNumber ,
       };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
@@ -221,6 +221,33 @@ app.post('/cardSign', async(req,res)=>
     }
 })
 
+
+app.post('/landingPage', async(req,res)=>
+{
+    let name = req.body.name;
+    let phoneNumber = req.body.phoneNumber
+    let email = req.body.email
+    let address = req.body.address
+    let type = req.body.type
+    let arr = {name:name,phoneNumber:phoneNumber,email:email,address:address,type:type}
+    let temp = await userWithEmailModel.insertMany({
+        name:name,
+        phoneNumber:phoneNumber,
+        email:email,
+        address:address,
+        type:type
+    })
+    if(temp !== null)
+    {
+        sendDigitalMenu(arr)
+        sendToTheCostumer(arr)
+        res.json('done')
+    }
+    else
+    {
+        res.json('error')
+    }
+})
 
 // app.get('/deleteall' , async(req,res)=>
 // {

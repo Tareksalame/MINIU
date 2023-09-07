@@ -91,9 +91,6 @@ export default function SignUp() {
             <img src={whatsapp} width={'15%'} alt="whatsapp" />
           </a>
           <h1  className='h3HomeMainTitle' style={{color:'black',fontSize:'15px',alignSelf:'center',marginRight:'0px'}}>לשירות הלקוחות</h1>
-
-
-     
     </div>
   )
 }

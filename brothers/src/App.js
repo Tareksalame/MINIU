@@ -8,6 +8,9 @@ import FirstPage from './components/FirstPage';
 import { UsersProvider } from './userContext';
 import BusinessCard from './components/BusinessCard';
 import OurCostumers from './components/OurCostumers';
+import Templates from './components/Templates';
+import LandingPages from './components/LandingPages';
+import LandingPageSign from './components/LandingPageSign';
 function App() {
 
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path='/OurProductsDigitalMenu' element={<MainPage/>}/>
         <Route path='/OurProductsBusinessCard' element={<BusinessCard/>}/>
         <Route path='/OurCustomers' element={<OurCostumers/>}/>
+        <Route path='/Templates' element={<Templates/>}/>
+        <Route path='/LandingPages' element={<LandingPages/>}/>
+        <Route path='/LandingPageSign' element={<LandingPageSign/>}/>
       </Routes>
       </BrowserRouter>
       </UsersProvider>
