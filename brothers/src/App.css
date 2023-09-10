@@ -96,7 +96,8 @@ html
   align-self: center;
   width: 100%;
   right: 0%;
-  top: 60px;
+  height: 100%;
+  top: 0%;
 }
 .hidden
 {
