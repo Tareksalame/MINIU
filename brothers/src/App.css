@@ -14,7 +14,7 @@
 .h1HomeMainTitle
 {
   font-size: 20px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html 
 {
@@ -40,7 +40,7 @@ html
   font-size: 20px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 .signInInput
@@ -52,7 +52,7 @@ html
   font-size: 20px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 
@@ -118,7 +118,7 @@ html
   width: 150px;
   height: 50px;
   background-color: rgb(214, 194, 173);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   border: black solid 3px;
   border-radius: 10px;
@@ -139,7 +139,7 @@ html
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #smallMenu
 {
@@ -151,7 +151,7 @@ html
 }
 #underHeader
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
   margin-top: 1%;
   padding-bottom: 2%;
@@ -175,7 +175,7 @@ html
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #OurProducts
 {
@@ -183,7 +183,7 @@ html
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #OurProducts2
 {
@@ -196,7 +196,7 @@ html
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .OurProducts3
 {
@@ -209,12 +209,12 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #businessCard1
 {
   margin-top: 0%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-bottom: 5px solid black;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -258,7 +258,7 @@ width: 100%;
 }
 #businessCard4
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-top: 5px solid rgb(214, 194, 173);
   padding: 10%;
   border-bottom: 5px solid rgb(214, 194, 173);
@@ -286,7 +286,7 @@ width: 100%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .selection
 {
@@ -295,7 +295,7 @@ width: 100%;
   background-color: black;
   color: rgb(214, 194, 173);
   text-align: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   border: 5px solid rgb(214, 194, 173);
   border-radius: 8px;
@@ -308,7 +308,7 @@ option
   background-color: black;
   color: rgb(214, 194, 173);
   text-align: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   border: 5px solid rgb(214, 194, 173);
   border-radius: 8px;
@@ -324,19 +324,19 @@ option
 }
 .stepsH3
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 13px;
 }
 .h1BusinessCard
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
   margin: 2px;
   font-size: 23px;
 }
 .menuForWho
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -434,12 +434,12 @@ option
 .signInDiv
 {
   animation: 1s ease-out 0s 1 slideInFromLeft;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .signUpMainDiv
 {
   animation: 1s ease-out 0s 1 slideInFromLeft;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
 }
 @keyframes slideInFromLeft {
@@ -470,13 +470,13 @@ option
   padding-bottom: 1px;
   color: black;
   text-decoration: none;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 #copy
 {
   color: var(--white-color);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: italic;
   font-size: 12px;
 }
@@ -494,19 +494,19 @@ option
   text-align: right;
   align-self: flex-end;
   margin-right: 25px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .waisTime
 {
   background-color: rgb(214, 194, 173);
   padding: 2%;
   /* width: 100%; */
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 .h2HomeMainTitle
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
 }
 .namePhoneInput
@@ -515,7 +515,7 @@ option
   height: 45px;
   text-align: right;
   padding: 1%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   margin-top: 2%;
   border: 3px solid rgb(214, 194, 173);
@@ -529,7 +529,7 @@ option
   font-size: 20px;
   margin-top: 10px;
   border-radius: 10px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: black;
   color: rgb(214, 194, 173);
 }
@@ -571,7 +571,7 @@ option
 {
   text-decoration: none;
   color: white;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
   margin-top: 5%;
 }
@@ -684,7 +684,7 @@ option
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #letsStartOurProducts3
 {
@@ -702,7 +702,7 @@ option
 .TitlesOurCustomersFull
 {
   font-size: 25px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(214, 194, 173);
   padding: 5%;
   display: none;
@@ -766,7 +766,7 @@ option
 .TitlesOurCustomers
 {
   font-size: 25px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(214, 194, 173);
   padding: 5%;
   border-radius: 10px;
@@ -956,7 +956,7 @@ margin-right: 10%;
   justify-content: center;
   align-items: center;
   padding-top: 20%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 #LPTitleDiv
@@ -1033,7 +1033,7 @@ margin-right: 10%;
   font-size: 20px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 .LPArrow
@@ -1104,7 +1104,7 @@ margin-right: 10%;
   border: none;
   padding-bottom: 0%;
   padding-top: 0%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 #menuShow
@@ -1128,7 +1128,7 @@ margin-right: 10%;
   border: none;
   padding-bottom: 1%;
   padding-top: 1%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 #mainLogominiu
@@ -1154,7 +1154,7 @@ margin-right: 10%;
 .h1HomeMainTitle
 {
   font-size: 40px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .h3HomeMainTitle
 {
@@ -1162,7 +1162,7 @@ margin-right: 10%;
   margin: 0px;
   align-self: center;
   margin-right: 25px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .waisTime
 {
@@ -1173,7 +1173,7 @@ margin-right: 10%;
   border-radius: 10px;
   border: 3px solid rgb(214, 194, 173);
   /* width: 100%; */
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 .clickToSTartImage
@@ -1240,7 +1240,7 @@ margin-right: 10%;
   height: 45px;
   text-align: right;
   padding: 1%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   margin-top: 2%;
   border: 3px solid rgb(214, 194, 173);
@@ -1270,7 +1270,7 @@ margin-right: 10%;
 {
   text-decoration: none;
   color: white;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 25px;
   margin-top: 3%;
 }
@@ -1285,7 +1285,7 @@ margin-right: 10%;
 /* <------- MainPage -------> */
 #underHeader
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
   margin-top: 0%;
   padding-bottom: 2%;
@@ -1308,7 +1308,7 @@ margin-right: 10%;
   border-bottom-right-radius: 50% ;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #ForWho
 {
@@ -1321,7 +1321,7 @@ margin-right: 10%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .menuAndcatalog
 {
@@ -1332,7 +1332,7 @@ margin-right: 10%;
 }
 .menuForWho
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1367,7 +1367,7 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .signInInput
 {
@@ -1378,7 +1378,7 @@ margin-right: 10%;
   font-size: 20px;
   padding: 2%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 #letsStartOurProducts3
@@ -1396,7 +1396,7 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #OurProducts2
 {
@@ -1413,12 +1413,12 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #businessCard1
 {
   margin-top: 0%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-bottom: 5px solid black;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -1447,7 +1447,7 @@ margin-right: 10%;
 }
 .h1BusinessCard
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
   margin: 2px;
   font-size: 30px;
@@ -1471,7 +1471,7 @@ margin-right: 10%;
 }
 #businessCard4
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-top: 5px solid rgb(214, 194, 173);
   padding: 3%;
   border-bottom: 5px solid rgb(214, 194, 173);
@@ -1495,7 +1495,7 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .stepsNumbers
 {
@@ -1508,7 +1508,7 @@ margin-right: 10%;
 }
 .stepsH3
 {
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 30px;
 }
 .makeCard
@@ -1529,14 +1529,14 @@ margin-right: 10%;
   font-size: 20px;
   padding: 2%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 /* ----- OUR CUSTOMERS PAGE ----- */
 .TitlesOurCustomersFull
 {
   font-size: 25px;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(214, 194, 173);
   padding: 2%;
   display: flex;
@@ -1606,7 +1606,7 @@ margin-right: 10%;
 {
   font-size: 25px;
   display: none;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(214, 194, 173);
   padding: 5%;
   border-radius: 10px;
@@ -1788,7 +1788,7 @@ margin-right: 10%;
   justify-content: center;
   align-items: center;
   padding-top: 8%;
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #LPTitleDiv
 {
@@ -1869,7 +1869,7 @@ margin-right: 10%;
   font-size: 30px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:fantasy;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
 }
 .LPArrow
