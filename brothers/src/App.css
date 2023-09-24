@@ -14,7 +14,7 @@
 .h1HomeMainTitle
 {
   font-size: 20px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 html 
 {
@@ -40,7 +40,7 @@ html
   font-size: 20px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 .signInInput
@@ -52,7 +52,7 @@ html
   font-size: 20px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 
@@ -118,7 +118,7 @@ html
   width: 150px;
   height: 50px;
   background-color: rgb(214, 194, 173);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 500;
   border: black solid 3px;
   border-radius: 10px;
@@ -131,14 +131,15 @@ html
   padding-bottom: 10%;
   margin-top: 10%;
   padding-top: 10%;
-  width: 80%;
+  width: 350px;
+  height: 250px;
   align-self: center;
   border-bottom-left-radius: 50%  ;
   border-bottom-right-radius: 50% ;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #smallMenu
 {
@@ -150,7 +151,7 @@ html
 }
 #underHeader
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   color: black;
   margin-top: 1%;
   padding-bottom: 2%;
@@ -174,7 +175,7 @@ html
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #OurProducts
 {
@@ -182,7 +183,7 @@ html
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #OurProducts2
 {
@@ -195,7 +196,7 @@ html
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .OurProducts3
 {
@@ -208,12 +209,12 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #businessCard1
 {
   margin-top: 0%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   border-bottom: 5px solid black;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -257,7 +258,7 @@ width: 100%;
 }
 #businessCard4
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   border-top: 5px solid rgb(214, 194, 173);
   padding: 10%;
   border-bottom: 5px solid rgb(214, 194, 173);
@@ -285,7 +286,7 @@ width: 100%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .selection
 {
@@ -294,7 +295,7 @@ width: 100%;
   background-color: black;
   color: rgb(214, 194, 173);
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 20px;
   border: 5px solid rgb(214, 194, 173);
   border-radius: 8px;
@@ -307,7 +308,7 @@ option
   background-color: black;
   color: rgb(214, 194, 173);
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 20px;
   border: 5px solid rgb(214, 194, 173);
   border-radius: 8px;
@@ -323,19 +324,19 @@ option
 }
 .stepsH3
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 13px;
 }
 .h1BusinessCard
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   color: black;
   margin: 2px;
   font-size: 23px;
 }
 .menuForWho
 {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -375,7 +376,7 @@ option
   border: none;
   padding-bottom: 5%;
   padding-top: 5%;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 
 }
@@ -433,12 +434,12 @@ option
 .signInDiv
 {
   animation: 1s ease-out 0s 1 slideInFromLeft;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .signUpMainDiv
 {
   animation: 1s ease-out 0s 1 slideInFromLeft;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   color: black;
 }
 @keyframes slideInFromLeft {
@@ -469,13 +470,13 @@ option
   padding-bottom: 1px;
   color: black;
   text-decoration: none;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 #copy
 {
   color: var(--white-color);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-style: italic;
   font-size: 12px;
 }
@@ -493,19 +494,19 @@ option
   text-align: right;
   align-self: flex-end;
   margin-right: 25px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .waisTime
 {
   background-color: rgb(214, 194, 173);
   padding: 2%;
   /* width: 100%; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 
 }
 .h2HomeMainTitle
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 20px;
 }
 .namePhoneInput
@@ -514,7 +515,7 @@ option
   height: 45px;
   text-align: right;
   padding: 1%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 20px;
   margin-top: 2%;
   border: 3px solid rgb(214, 194, 173);
@@ -528,7 +529,7 @@ option
   font-size: 20px;
   margin-top: 10px;
   border-radius: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   background-color: black;
   color: rgb(214, 194, 173);
 }
@@ -570,7 +571,7 @@ option
 {
   text-decoration: none;
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 15px;
   margin-top: 5%;
 }
@@ -683,7 +684,7 @@ option
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #letsStartOurProducts3
 {
@@ -701,7 +702,7 @@ option
 .TitlesOurCustomersFull
 {
   font-size: 25px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   background-color: rgb(214, 194, 173);
   padding: 5%;
   display: none;
@@ -765,7 +766,7 @@ option
 .TitlesOurCustomers
 {
   font-size: 25px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   background-color: rgb(214, 194, 173);
   padding: 5%;
   border-radius: 10px;
@@ -955,7 +956,8 @@ margin-right: 10%;
   justify-content: center;
   align-items: center;
   padding-top: 20%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 #LPTitleDiv
 {
@@ -1031,7 +1033,7 @@ margin-right: 10%;
   font-size: 20px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 .LPArrow
@@ -1102,7 +1104,7 @@ margin-right: 10%;
   border: none;
   padding-bottom: 0%;
   padding-top: 0%;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 #menuShow
@@ -1126,7 +1128,7 @@ margin-right: 10%;
   border: none;
   padding-bottom: 1%;
   padding-top: 1%;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 #mainLogominiu
@@ -1152,7 +1154,7 @@ margin-right: 10%;
 .h1HomeMainTitle
 {
   font-size: 40px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .h3HomeMainTitle
 {
@@ -1160,7 +1162,7 @@ margin-right: 10%;
   margin: 0px;
   align-self: center;
   margin-right: 25px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .waisTime
 {
@@ -1171,7 +1173,7 @@ margin-right: 10%;
   border-radius: 10px;
   border: 3px solid rgb(214, 194, 173);
   /* width: 100%; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 
 }
 .clickToSTartImage
@@ -1238,7 +1240,7 @@ margin-right: 10%;
   height: 45px;
   text-align: right;
   padding: 1%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 20px;
   margin-top: 2%;
   border: 3px solid rgb(214, 194, 173);
@@ -1268,7 +1270,7 @@ margin-right: 10%;
 {
   text-decoration: none;
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 25px;
   margin-top: 3%;
 }
@@ -1283,7 +1285,7 @@ margin-right: 10%;
 /* <------- MainPage -------> */
 #underHeader
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   color: black;
   margin-top: 0%;
   padding-bottom: 2%;
@@ -1299,13 +1301,14 @@ margin-right: 10%;
   padding-bottom: 5%;
   margin-top: 5%;
   padding-top: 5%;
-  width: 30%;
+  width: 740px;
+  height: 520px;
   align-self: center;
   border-bottom-left-radius: 50%  ;
   border-bottom-right-radius: 50% ;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #ForWho
 {
@@ -1318,7 +1321,7 @@ margin-right: 10%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .menuAndcatalog
 {
@@ -1329,7 +1332,7 @@ margin-right: 10%;
 }
 .menuForWho
 {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1364,7 +1367,7 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .signInInput
 {
@@ -1375,7 +1378,7 @@ margin-right: 10%;
   font-size: 20px;
   padding: 2%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 #letsStartOurProducts3
@@ -1393,7 +1396,7 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #OurProducts2
 {
@@ -1410,12 +1413,12 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #businessCard1
 {
   margin-top: 0%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   border-bottom: 5px solid black;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -1444,7 +1447,7 @@ margin-right: 10%;
 }
 .h1BusinessCard
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   color: black;
   margin: 2px;
   font-size: 30px;
@@ -1468,7 +1471,7 @@ margin-right: 10%;
 }
 #businessCard4
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   border-top: 5px solid rgb(214, 194, 173);
   padding: 3%;
   border-bottom: 5px solid rgb(214, 194, 173);
@@ -1492,7 +1495,7 @@ margin-right: 10%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 .stepsNumbers
 {
@@ -1505,7 +1508,7 @@ margin-right: 10%;
 }
 .stepsH3
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-size: 30px;
 }
 .makeCard
@@ -1526,14 +1529,14 @@ margin-right: 10%;
   font-size: 20px;
   padding: 2%;
   border: 3px solid rgb(214, 194, 173);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 /* ----- OUR CUSTOMERS PAGE ----- */
 .TitlesOurCustomersFull
 {
   font-size: 25px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   background-color: rgb(214, 194, 173);
   padding: 2%;
   display: flex;
@@ -1603,7 +1606,7 @@ margin-right: 10%;
 {
   font-size: 25px;
   display: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   background-color: rgb(214, 194, 173);
   padding: 5%;
   border-radius: 10px;
@@ -1785,7 +1788,7 @@ margin-right: 10%;
   justify-content: center;
   align-items: center;
   padding-top: 8%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
 }
 #LPTitleDiv
 {
@@ -1866,7 +1869,7 @@ margin-right: 10%;
   font-size: 30px;
   padding: 3%;
   border: 3px solid rgb(214, 194, 173);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:fantasy;
   font-weight: 900;
 }
 .LPArrow

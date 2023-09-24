@@ -3,7 +3,7 @@ import BlackMenu from '../images/MINI-U.svg'
 import { Link, useNavigate } from 'react-router-dom';
 import mousedown from '../images/mouse-cursor.png'
 import { useState } from 'react'
-import button2 from '../images/button2.svg'
+import button2 from '../images/buttons/button2.svg'
 import whatsapp from '../images/whatsapp.png'
 
 
@@ -47,21 +47,22 @@ export default function LandingPageSign() {
              }).catch((err)=>{return err})
     }
 
+
   return (
     <div id='LPSignMainDiv'>
+
         <img className='LogoForSignUpIn' onClick={()=>{nav('/')}} src={BlackMenu} alt="brothers" />
-        <h1 className='h1HomeMainTitle' style={{color:'black'}}>טופס ליצירת דף נחיתה/אתר אינטרנט</h1>
+        <h1 className='h1HomeMainTitle' style={{color:'black'}}>استمارة لموقع انترنت/صفحة هبوط </h1>
         <img  className='LPArrow'  src={mousedown} alt="" />
-        <input  onChange={(e)=>{setName(e.target.value)}} placeholder='שם מלא/שם העסק' style={{textAlign:'end'}}         className='LandingPageSignInput' type="text" />
-            <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='דואר אלקטרוני'     className='LandingPageSignInput' type="text" />
-            <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='מספר טלפון'  className='LandingPageSignInput' type="text" />
-            <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='כתובת/עיר'       className='LandingPageSignInput' type="text" />
+        <input  onChange={(e)=>{setName(e.target.value)}} placeholder='الاسم الكامل/اسم المشروع' style={{textAlign:'end'}}         className='LandingPageSignInput' type="text" />
+            <input style={{textAlign:'end'}} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='البريد الالكتروني'     className='LandingPageSignInput' type="text" />
+            <input style={{textAlign:'end'}} onChange={(e)=>{setPhoneNumber(e.target.value)}}  placeholder='رقم الهاتف'  className='LandingPageSignInput' type="text" />
+            <input style={{textAlign:'end'}} onChange={(e)=>{setAddress(e.target.value)}}  placeholder='العنوان/البلد'       className='LandingPageSignInput' type="text" />
         <img  onClick={digitalMenu}  className='LPSign' src={button2} alt="" />
         <a className='footerFont' href="https://wa.me/972525272910">
             <img src={whatsapp} width={'15%'} alt="whatsapp" />
           </a>
-          <h1  className='h3HomeMainTitle' style={{color:'black',fontSize:'15px',alignSelf:'center',marginRight:'0px'}}>לשירות הלקוחות</h1>
-
+          <h1  className='h3HomeMainTitle' style={{color:'black',fontSize:'15px',alignSelf:'center',marginRight:'0px'}}>خدمة الزبائن</h1>
     </div>
   )
 }

@@ -22,10 +22,10 @@ export default function Footer() {
           </div>
         </div>
         <div id='footerNav'>
-          <a href='/' style={{marginTop:'20px'}}  className='footerFont'>דף הבית</a>
-          <a href='/DigitalMenu' className='footerFont'>הזמנת תפריט דיגיטלי</a>
-          <a href='/BusinessCard'  className='footerFont'>הזמנת כרטיס ביקור דיגיטלי</a>
-          <a href='/LandingPageSign' style={{marginBottom:'20px'}} className='footerFont'>הזמנת דף נחיתה/אתר אינטרנט</a>
+          <a href='/' style={{marginTop:'20px'}}  className='footerFont'>الصفحة الرئيسية</a>
+          <a href='/DigitalMenu' className='footerFont'>اطلب القائمة الرقمية لمطعمك</a>
+          <a href='/BusinessCard'  className='footerFont'>اطلب بطاقة العمل الرقمية الخاصة بك</a>
+          <a href='/LandingPageSign' style={{marginBottom:'20px'}} className='footerFont'>اطلب صفحة هبوط/موقع انترنت</a>
 
         <img id='MiniuLogoFooter'  onClick={()=>{nav('/')}} src={whiteMenu} alt="brothers" />
         </div>
