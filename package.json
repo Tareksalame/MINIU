@@ -16,7 +16,7 @@
     "express": "^4.18.2",
     "mongoose": "^7.3.0",
     "node-fetch": "^3.3.2",
-    "nodemailer": "^6.9.4",
+    "nodemailer": "^6.9.13",
     "twilio": "^4.15.0",
     "uuid": "^9.0.0"
   }
